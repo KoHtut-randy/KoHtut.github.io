@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hein Htut Aung </title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
     
 </head>
 <body>
-    <nav class="navbar" id="navbar">
+
+
+    <section class="contact container" id="contact">
+        <h2>Contact</h2>
+
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" class="name" placeholder="your name" required>
+            <input type="email" class="email" placeholder="your email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="write message here..." class="message" required></textarea>
+            <input type="submit" value="Send" class="send-btn" >
+        </form>
+
+    </section>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('VtbMM0uf-F0GWBFuK');
+        })();
+    </script>
+
+    <script src="js/form.js"></script>
+    <!-- <nav class="navbar" id="navbar">
        <div class="nav-ava">
            <img src="./img/main1.gif" alt="">
        </div>
@@ -113,6 +140,6 @@
         <p>Copyright© <span>2022</span>. <span>H</span>ein <span>H</span>tut <span>A</span>ung.<br>
             Terms <span>&</span> Conditions.All Rights Reserved.
         </p>
-    </footer>
+    </footer> -->
 </body>
 </html>
